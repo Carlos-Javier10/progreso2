@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Orders System</h1>
+            <ul>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="billing.html">Billing</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container main">
+        <section id="orders">
+            <h2>Orders</h2>
+            <button type="button" class="btn" onclick="fetchOrders()">Fetch Orders</button>
+            <table id="ordersTable">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Product ID</th>
+                        <th>Quantity</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Product Image</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button type="button" class="btn" onclick="generateCSV()">Generate CSV</button>
+        </section>
+    </div>
+
+    <script src="scripts/orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Billing System</h1>
+            <ul>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="billing.html">Billing</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container main">
+        <section id="billing">
+            <h2>Billing</h2>
+            <form id="billingForm">
+                <div class="form-group">
+                    <label for="billingOrderId">Order ID:</label>
+                    <input type="text" id="billingOrderId" name="billingOrderId">
+                </div>
+                <button type="button" class="btn" onclick="generateInvoice()">Generate Invoice</button>
+            </form>
+            <div id="invoiceDetails"></div>
+        </section>
+    </div>
+
+    <script src="scripts/billing.js"></script>
+</body>
+</html>

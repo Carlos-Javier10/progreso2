@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Inventory System</h1>
+            <ul>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="billing.html">Billing</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container main">
+        <section id="inventory">
+            <h2>Inventory</h2>
+            <button type="button" class="btn" onclick="fetchInventory()">Fetch Inventory</button>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Product Image</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="scripts/inventory.js"></script>
+</body>
+</html>
